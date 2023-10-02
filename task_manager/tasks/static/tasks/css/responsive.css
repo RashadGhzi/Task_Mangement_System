@@ -1,0 +1,23 @@
+@media only screen and (min-width: 576px) {
+  .form-box {
+    position: relative !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .action-btn {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .items span {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .form-box {
+    position: fixed !important;
+  }
+}

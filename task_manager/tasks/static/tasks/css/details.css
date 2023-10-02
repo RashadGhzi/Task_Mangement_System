@@ -1,0 +1,52 @@
+.task-banner{
+    background: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.task-photos{
+    height: 100% !important;
+    width: 100% !important;
+    /* border-radius: 7px; */
+}
+
+.task-banner .title{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.task-banner .description{
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.task-banner .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-btn{
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+
+.form-box{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.items span{
+    font-size: 12px;
+    letter-spacing: 2px;
+}

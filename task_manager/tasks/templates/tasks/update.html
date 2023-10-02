@@ -1,0 +1,16 @@
+{% extends "tasks/base.html" %}
+{% load static %}
+{% block body-content %}
+    <div class="container col-12 col-md-10 col-lg-8 mt-5">
+        <form class="update-form-box p-4" action="" method="post" enctype="multipart/form-data" novalidate>
+            {% csrf_token %}
+            <div class="form-data">
+                {{form.as_p}}
+            </div>
+            <div class="buttons">
+                <button type="submit" class="col-6 btn btn-success update-form-btn">UPDATE</button>
+                <a href="{% url "tasks_details" %}" class="col-5 btn btn-warning update-form-btn">CANCEL</a>
+            </div>
+        </form>
+    </div>
+{% endblock body-content %}

@@ -1,0 +1,80 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Task API",
+    "dateExported": "2023-10-02T12:46:49.108Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "668a4758-9188-41c0-9b4d-61e7f8e1141c",
+            "colId": "41e98c22-44f8-4883-8304-c5c5a301d6fa",
+            "containerId": "",
+            "name": "Task List",
+            "url": "http://127.0.0.1:8000/tasks/list/api/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-02T12:12:02.892Z",
+            "modified": "2023-10-02T12:12:33.537Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "822711e3-5cc0-4f6e-99f1-190b5e25e0d5",
+            "colId": "41e98c22-44f8-4883-8304-c5c5a301d6fa",
+            "containerId": "",
+            "name": "Task Post data",
+            "url": "http://127.0.0.1:8000/tasks/list/api/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-02T12:14:24.255Z",
+            "modified": "2023-10-02T12:15:02.779Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3a9d2704-df36-4386-a107-f38dcc6c66a6",
+            "colId": "41e98c22-44f8-4883-8304-c5c5a301d6fa",
+            "containerId": "",
+            "name": "Retrieve Task data",
+            "url": "http://127.0.0.1:8000/tasks/details/api/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-02T12:30:36.068Z",
+            "modified": "2023-10-02T12:31:15.266Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "964c6498-48aa-4f7d-8387-219cc8c3e60a",
+            "colId": "41e98c22-44f8-4883-8304-c5c5a301d6fa",
+            "containerId": "",
+            "name": "updata task data",
+            "url": "http://127.0.0.1:8000/tasks/details/api/2/",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-10-02T12:31:42.458Z",
+            "modified": "2023-10-02T12:34:43.470Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"lorem ipsum dolo sit amet lorem\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+.update-form-box{
+    background-color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.update-form-box .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.update-form-box .buttons .update-form-btn{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}

@@ -1,0 +1,35 @@
+{% extends "tasks/base.html" %} {% block body-content %}
+{% load static %}
+{% include "tasks/message.html" %}
+<div class="container col-11 col-sm-10 col-lg-10 row mt-5">
+  <div class=" col-12 col-lg-4 ">
+    <form action="{% url "tasks_details" %}" method="post" class="p-3 form-box" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      <div class="">{{form.as_p}}</div>
+      <button type="submit" class="btn btn-info col-5 action-btn w-100">SUBMIT</button>
+    </form>
+  </div>
+  <div class="col-lg-7 col-12 offset-lg-1 mt-4 mt-lg-0">
+    {% for task in task_objects %}
+      <div class="task-banner p-3">
+          <img class="task-photos" src="{{task.photos.url}}" alt="photo" >
+          <div class="title">{{task.title}}</div>
+          <div class="description">{{task.description}}</div>
+          <div class="items d-flex align-items-center justify-content-between fs-6 mt-3">
+            <span class="fw-bold">Due Date: {{task.due_date}}</span>
+            <span class="fw-bold">Priority: {{task.priority}}</span>
+            {% if task.is_complete %}
+            <span class="fw-bold">Task Completed: Done</span>
+            {% else %}
+            <span class="fw-bold">Task Completed: Pending</span>
+            {% endif %}
+          </div>
+          <div class="buttons mt-3">
+            <a href="{% url "tasks_update" task.id %}" class="btn btn-info col-5 action-btn">EDIT</a>
+            <a href="{% url "tasks_delete" task.id %}" class="btn btn-danger col-6 action-btn" >DELETE</a>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock body-content %}
