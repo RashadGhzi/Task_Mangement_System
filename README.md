@@ -4,28 +4,28 @@
 
 
 
-## First clone the project in your directory
+### First clone the project in your directory
 
 ```bash
   git clone https://github.com/RashadGhzi/Task_Mangement_System.git
 ```
 
-## Then create vertualenv 
+### Then create vertualenv 
 ```bash
     python -m venv env # name can be any
 ```
-## Activate Virtual Environment
+### Activate Virtual Environment
 ```bash
     .\env\Scripts\activate
 ```
 
-## Install everything from requirement.txt file
+### Install everything from requirement.txt file
 ```bash
-    pip install -r requirement.txt 
+    pip install -r requirements.txt 
 ```
 
 #### Change the Directory to inner project where manage.py file is located 
-## Finally run the project
+### Finally run the project
 ```bash
     python manage.py runserver
 ```
