@@ -14,6 +14,12 @@
 ```bash
     python -m venv env # name can be any
 ```
+
+### Then change your directory to using below command 
+```bash  
+    cd .\Task_Mangement_System\
+```
+
 ### Activate Virtual Environment
 ```bash
     .\env\Scripts\activate
