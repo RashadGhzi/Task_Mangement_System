@@ -31,6 +31,10 @@ pip install -r requirements.txt
 ```
 
 #### Change the Directory to inner project where manage.py file is located 
+```bash
+cd .\task_manager\
+```
+
 ### Finally run the project
 ```bash
 python manage.py runserver
