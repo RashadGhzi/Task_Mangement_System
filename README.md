@@ -10,14 +10,14 @@
 git clone https://github.com/RashadGhzi/Task_Mangement_System.git
 ```
 
-### Then create vertualenv 
-```bash
-python -m venv env # name can be any
-```
-
 ### Then change your directory to using below command 
 ```bash  
 cd .\Task_Mangement_System\
+```
+
+### Then create vertualenv 
+```bash
+python -m venv env # name can be any
 ```
 
 ### Activate Virtual Environment
